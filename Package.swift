@@ -24,6 +24,9 @@ let package = Package(
       name: "BrightroomUI",
       dependencies: ["BrightroomEngine", "Verge", "TransitionPatch"],
       exclude: ["Info.plist"],
+      resources: [
+          .process("Media.xcassets") // This line specifies the asset catalog
+      ]
       swiftSettings: [.define("SWIFT_PACKAGE_MANAGER")]
     )
   ],
