@@ -25,8 +25,8 @@ let package = Package(
       dependencies: ["BrightroomEngine", "Verge", "TransitionPatch"],
       exclude: ["Info.plist"],
       resources: [
-          .process(".") // This line specifies the asset catalog
-      ]
+          .process("Resources")
+      ],
       swiftSettings: [.define("SWIFT_PACKAGE_MANAGER")]
     )
   ],
